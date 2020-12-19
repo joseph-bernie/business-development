@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/css" href="css/extensible.css" ?>
+<!DOCTYPE catalog 
+[ 
+<!ELEMENT catalog (textbook+)>
+<!ELEMENT textBook (title, author, publisher, year, description, price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+]>
+
+
+<catalog xmlns="http://example.com/textbooks/catalog">
+   <message>
+       <![CDATA[
+         XML is a Extensible Markup Language that you can use to create your own tags. It is a flexible text format for creating structured data documents. It was designed to transport and store data by the World Wide Web Consortium (W3C). This document is my wish list textbook catalog.
+       ]]>
+   </message>
+   <textBook>
+       <title>Beginning XML: Edition 5</title>
+	   <price currency = "USD">$20.79</price>
+       <author>Joe Fawcett, Danny Ayers &amp; Liam R. E. Quin</author>
+	   <publisher>John Wiley &amp; Sons</publisher>
+	   <year>Jun 25, 2012</year>
+       <description>A complete update covering the many advances to the XML language</description>
+   </textBook>
+   <textBook>
+      <title>Beginning XML with C# 2008</title>
+	   <price currency = "USD">$19.79</price>
+       <author>Bipin Joshi</author>
+	   <publisher>Apress</publisher>
+	   <year>Jul 17, 2008</year>
+       <description>Beginning XML with C# focuses on XML and how it is used within .NET 3.5. </description>
+   </textBook>
+   <textBook>
+       <title>XML Development with Apache Tools</title>
+	   <price currency = "USD">$20.79</price>
+       <author>Theodore W. Leung</author>
+	   <publisher>John Wiley &amp; Sons</publisher>
+	   <year>January 30, 2004</year>
+       <description>This book is a code-intensive guide to the Apache XML tools that are most relevant for Java developers.</description>
+   </textBook>
+   <textBook>
+     <title>XML: A Desktop Quick Reference, Edition 3</title>
+	    <price currency = "USD">$19.79</price>
+       <author>Elliotte Rusty HaroldW. Scott Means</author>
+	   <publisher>O'Reilly Media, Inc.</publisher>
+	   <year>Sep 23, 2004</year>
+       <description>Quick-reference syntax rules and usage examples for the core XML technologies, including XML, DTDs, Xpath, XSLT, SAX, and DOM</description>
+  </textBook>
+</catalog>
