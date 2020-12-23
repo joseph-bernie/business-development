@@ -1,0 +1,26 @@
+.colorBtn {
+  padding: 0.25rem 0.5rem;
+  border: 3px solid #fefefe;
+  border-radius: 7px;
+  color: #0e0d0d;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid green;
+  width: 14%;
+}
+
+.colorBtn:hover {
+  background: rgb(158, 144, 144);
+}
+
+.box {
+  height: 50px;
+  position: relative;
+}
